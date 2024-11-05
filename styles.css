@@ -1,0 +1,69 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} html, body {
+    -webkit-tap-highlight-color: transparent;
+    height: 100dvh;
+    font-family: 'Clash Display', sans-serif;
+} button {
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: inherit;
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    color: #000;
+}
+
+.calculator {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    color: #463e2d;
+} .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    padding: 3rem 1rem 0 1rem;
+    background: #fff0d1;
+    border-bottom: 3px solid #000;
+} .output .result {
+    font-size: 3rem;
+    font-weight: 600;
+} .output .expression {
+    font-size: 1.4rem;
+    color: #8a867f;
+    letter-spacing: 1.5px;
+}
+
+.input {
+    padding: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    background: #ffffdd;
+    justify-items: center;
+} .input button {
+    height: 100%;
+    width: 100%;
+    font-size: 1.4rem;
+} .input button.light {
+    background: #ffe3ab;
+} .input button.bright {
+    background: #f4ce9f;
+} .input button.dark {
+    background: #f1b060;
+} .input button.equal {
+    background: #ff991c;
+}
